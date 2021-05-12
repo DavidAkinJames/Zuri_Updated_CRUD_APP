@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const User = require('./user');
 const uri = process.env.MONGODB_URI;
 require('dotenv').config();
-const port = process.env.PORT || 4000; 
+const port = process.env.PORT || 3000; 
 
 //express app
 const app = express();
