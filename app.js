@@ -15,7 +15,7 @@ const connectionString = 'mongodb://localhost:27017/userapp';
 
 
 //Connect to mongodb
-mongoose.connect(connectionString, {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true, 
   useFindAndModify: false
