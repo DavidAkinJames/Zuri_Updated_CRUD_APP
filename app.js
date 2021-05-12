@@ -55,7 +55,15 @@ app.post('/users', (req,res)=> {
 
 
 
-
+app.get('/', (req, res) => {
+  User.find({}, (err, users) => {
+    if (err) {
+      return res.status(500).json({ message: err})
+    } else {
+      return res.status(200).json({message: users})
+    }
+  })
+})
 
 app.get('/users', (req, res)=> {
   //Fetching all users
